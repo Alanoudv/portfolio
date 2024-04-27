@@ -71,19 +71,19 @@ p {
 
 @keyframes words {
     0%,20%{
-        content: " FullStack-Developer ";
+        content: "FullStack Dev"
     }
     21%,40%{
-        content: "API Designer";
-    }
-    41%,60%{
         content: "Software Tester";
     }
+    41%,60%{
+        content: "API Designer";
+    }
     61%,80%{
-        content: "FullStack-Developer";
+        content: "FullStack Dev";
     }
     81%,100%{
-        content: "API Designer";
+        content: "Software Tester";
     }
 
 }
