@@ -262,7 +262,8 @@ section {
 .section__text {
 margin-top: 20px;
   align-self: center;
-  text-align: center;
+  text-align:center;
+  width: 100%;
 }
 
 .section__text p {
@@ -282,6 +283,7 @@ margin-top: 20px;
 .title {
   font-size: 2.2rem;
   text-align: center;
+  width: 100%;
 }
 
 #socials-container {
