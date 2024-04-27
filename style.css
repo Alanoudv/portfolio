@@ -7,6 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+
 }
 
 html {
@@ -22,46 +23,77 @@ p {
 
 
 
-.animation{
-    min-height: 100vh;
-    display:contents;
-    align-items:normal;
-    justify-content:space-evenly;
-    overflow: hidden;
-  
-}
-.animation .text {
+.animated-text{
     font-family: "Poppins", sans-serif;
     position:relative;
-    color: rgb(167, 58, 163);
-    font-size: 30px;
+    color:black;
+    font-size: 28px;
     font-weight: 600;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100vh;
+    display:contents;
+    align-items:center;
+    justify-content:center;
+    overflow: hidden;
+    width: 100%;
+  
 }
 
-.animation .text.first-text{
-    color: black;
-}
-.text.sec-text:before{
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-height: 100%;
-width: 100%;
-background-color: white;
-border-left: 2px solid black;
-animation: animate 4s steps(12) infinite;
+.animated-text span{
+    position: relative;
 }
 
-@keyframes animate {
-    40%, 60%{
-        left: calc(100% + 1px);
+.animated-text span::before{
+    content: "";
+    color: rgb(167, 58, 163);
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "💥";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #ffffff;
+    border-left: 2px solid #4f07f7;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
     }
-    100%{
-        left: 0%;
+}
 
+@keyframes words {
+    0%,20%{
+        content: "FullStack Developer";
     }
-    
+    21%,40%{
+        content: "API Designer";
+    }
+    41%,60%{
+        content: "Software Tester";
+    }
+    61%,80%{
+        content: "FullStack Developer";
+    }
+    81%,100%{
+        content: "API Designer";
+    }
+
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
 }
 
 
