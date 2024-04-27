@@ -43,6 +43,7 @@ p {
 
 .animated-text span{
     position: relative;
+    width: 100%;
 }
 
 .animated-text span::before{
@@ -70,7 +71,7 @@ p {
 
 @keyframes words {
     0%,20%{
-        content: "FullStack Developer";
+        content: " FullStack-Developer ";
     }
     21%,40%{
         content: "API Designer";
@@ -79,7 +80,7 @@ p {
         content: "Software Tester";
     }
     61%,80%{
-        content: "FullStack Developer";
+        content: "FullStack-Developer";
     }
     81%,100%{
         content: "API Designer";
