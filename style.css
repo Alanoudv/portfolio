@@ -48,7 +48,7 @@ p {
 
 .animated-text span::before{
     content: "";
-    color: rgb(167, 58, 163);
+    color: rgb(43,63,154,255);
     animation: words 20s infinite;
 }
 
@@ -58,7 +58,7 @@ p {
     width: calc(100% + 8px);
     height: 100%;
     background-color: #ffffff;
-    border-left: 2px solid #4f07f7;
+    border-left: 2px solid #be0fb2;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
@@ -241,6 +241,7 @@ section {
 }
 
 .section-container {
+  margin-top: 10px;
   display: flex;
 }
 
@@ -272,6 +273,7 @@ margin-top: 20px;
 }
 
 .section__text__p1 {
+  margin-top: 15px;
   text-align: center;
   font-size: 1rem;
 }
@@ -282,12 +284,14 @@ margin-top: 20px;
 }
 
 .title {
+  margin-top: 10px;
   font-size: 2.2rem;
   text-align: center;
   width: 100%;
 }
 
 #socials-container {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   margin-top: 1rem;
