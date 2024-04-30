@@ -31,25 +31,23 @@ p {
     font-weight: 600;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    height: 100vh;
     display:contents;
     align-items:center;
     justify-content:center;
-    overflow: hidden;
-    width: 100%;
+    display: flex;
   
 }
 
 .animated-text span{
     position: relative;
-    width: 100%;
+    width: 230px;
 }
 
 .animated-text span::before{
     content: "";
     color: rgb(43,63,154,255);
     animation: words 20s infinite;
+    display: block;
 }
 
 .animated-text span::after{
@@ -59,7 +57,8 @@ p {
     height: 100%;
     background-color: #ffffff;
     border-left: 2px solid #be0fb2;
-    right: -8px;
+    right: -16px;
+    top: 0;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
 }
 
@@ -91,6 +90,7 @@ p {
 @keyframes typing {
     10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
         width: 0;
+      
     }
     5%,20%,25%,40%,45%,60%,65%,80%,85%{
         width: calc(100% + 8px);
