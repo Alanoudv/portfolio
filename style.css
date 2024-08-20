@@ -310,6 +310,9 @@ margin-top: 20px;
 .btn-container {
   display: flex;
   justify-content: center;
+  justify-self:end;
+  justify-items: end;
+  justify-self: start;
   gap: 1rem;
 }
 
@@ -462,12 +465,23 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 450px;
+}
+
+.color-container .article-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: auto;
+  object-fit: cover;
 }
 
 .project-title {
@@ -478,6 +492,11 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.color-container .btn-container {
+  margin-top: auto;
+  padding-bottom: 1.5rem;
 }
 
 /* CONTACT */
